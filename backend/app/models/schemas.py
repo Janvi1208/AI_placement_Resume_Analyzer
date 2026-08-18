@@ -37,12 +37,17 @@ class TokenOut(BaseModel):
 
 # ---------- Resume ----------
 
+class SkillCategory(BaseModel):
+    category: str
+    items: list[str] = []
+
+
 class ResumeParsed(BaseModel):
     name: Optional[str] = None
     email: Optional[str] = None
     phone: Optional[str] = None
     education: list[str] = []
-    skills: list[str] = []
+    skills: list[SkillCategory] = []
     experience: list[str] = []
     projects: list[str] = []
     certifications: list[str] = []
