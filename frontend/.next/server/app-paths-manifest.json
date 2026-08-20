@@ -1,8 +1,12 @@
 {
-  "/page": "app/page.js",
-  "/login/page": "app/login/page.js",
-  "/signup/page": "app/signup/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/analysis/[id]/page": "app/analysis/[id]/page.js",
   "/dashboard/page": "app/dashboard/page.js",
   "/analyze/page": "app/analyze/page.js",
-  "/analysis/[id]/page": "app/analysis/[id]/page.js"
+  "/history/page": "app/history/page.js",
+  "/page": "app/page.js",
+  "/mock-interview/page": "app/mock-interview/page.js",
+  "/profile/page": "app/profile/page.js",
+  "/login/page": "app/login/page.js",
+  "/signup/page": "app/signup/page.js"
 }
