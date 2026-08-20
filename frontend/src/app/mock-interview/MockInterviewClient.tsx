@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import { api } from "@/lib/api";
 
 interface Question {
@@ -21,10 +20,13 @@ interface Feedback {
   next_question: Question | null;
 }
 
-export default function MockInterviewClient() {
-  const params = useSearchParams();
-  const analysisId = params.get("analysis_id");
+interface MockInterviewClientProps {
+  analysisId: string | null;
+}
 
+export default function MockInterviewClient({
+  analysisId,
+}: MockInterviewClientProps) {
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [question, setQuestion] = useState<Question | null>(null);
   const [answer, setAnswer] = useState("");

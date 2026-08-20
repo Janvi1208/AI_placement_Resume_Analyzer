@@ -7,4 +7,4 @@ __pycache__/
 .env.*
 .next/
 dist/
-build/
+build/.next/ 
